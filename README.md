@@ -31,9 +31,9 @@ Things you may want to cover:
 |email|string|null: false, unique: true|
 
 ### Association
-- belongs_to :group_users
-- belongs_to :groups, through: group_users
-- belongs_to :messages
+- has_many :group_users
+- has_many :groups, through: group_users
+- has_many :messages
 
 
 ## groupsテーブル
@@ -43,9 +43,9 @@ Things you may want to cover:
 |name|string|null: false, unique: true|
 
 ### Association
-- belongs_to :group_users
-- belongs_to :users, through: group_users
-- belongs_to :messages
+- has_many :group_users
+- has_many :users, through: group_users
+- has_many :messages
 
 
 ## groups_usersテーブル
